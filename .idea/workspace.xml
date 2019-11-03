@@ -95,7 +95,7 @@
       <workItem from="1572506912299" duration="1946000" />
       <workItem from="1572528179228" duration="2801000" />
       <workItem from="1572533922028" duration="56000" />
-      <workItem from="1572781966364" duration="1453000" />
+      <workItem from="1572781966364" duration="2492000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -118,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572530375722</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="refactored mapDispatchToProps in UsersContainer">
+      <created>1572787585356</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572787585356</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +148,7 @@
     <MESSAGE value="New social network prototype, already with react-redux, axios etc" />
     <MESSAGE value="Pagination added" />
     <MESSAGE value="refactor container component, made 'users' a pure function" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor container component, made 'users' a pure function" />
+    <MESSAGE value="refactored mapDispatchToProps in UsersContainer" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored mapDispatchToProps in UsersContainer" />
   </component>
 </project>
