@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="added logic for &quot;follow/unfollow&quot; buttons">
-      <change afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+    <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -109,7 +110,9 @@
       <workItem from="1572962486376" duration="1250000" />
       <workItem from="1572978659561" duration="6000" />
       <workItem from="1573040790716" duration="3287000" />
-      <workItem from="1573059873012" duration="4129000" />
+      <workItem from="1573059873012" duration="4518000" />
+      <workItem from="1573064615736" duration="12000" />
+      <workItem from="1573477290638" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -195,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573045978784</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added axios.create for UsersContainer component">
+      <created>1573064384859</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573064384859</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +236,7 @@
     <MESSAGE value="added HeaderContainer" />
     <MESSAGE value="added login" />
     <MESSAGE value="added logic for &quot;follow/unfollow&quot; buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="added logic for &quot;follow/unfollow&quot; buttons" />
+    <MESSAGE value="added axios.create for UsersContainer component" />
+    <option name="LAST_COMMIT_MESSAGE" value="added axios.create for UsersContainer component" />
   </component>
 </project>
