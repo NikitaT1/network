@@ -103,7 +103,7 @@ export const followUserThunk = (userId) => {
                     dispatch(follow(userId))
                 }
             })
-            dispatch(toggleFollowingProgress(false, userId))
+            .then(dispatch(toggleFollowingProgress(false, userId)))
     }
 }
 
@@ -116,7 +116,7 @@ export const unFollowUserThunk = (userId) => {
                     dispatch(unfollow(userId))
                 }
             })
-            dispatch(toggleFollowingProgress(false, userId))
+            .then(dispatch(toggleFollowingProgress(false, userId)))
     }
 }
 
