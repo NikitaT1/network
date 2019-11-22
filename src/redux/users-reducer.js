@@ -94,17 +94,31 @@ export const onPageChangedThunk = (pageNumber, pageSize) => {
     }
 }
 
-/*export const followUser = (userId) => {
+export const followUserThunk = (userId) => {
     return (dispatch) => {
         dispatch(toggleFollowingProgress(true, userId))
-        usersAPI.followUser(userId).then(data => {
-            if (data.resultCode === 0) {
-                dispatch(follow(userId))
-            }
+        usersAPI.followUser(userId)
+            .then(data => {
+                if (data.resultCode === 0) {
+                    dispatch(follow(userId))
+                }
+            })
             dispatch(toggleFollowingProgress(false, userId))
-        })
     }
-}*/
+}
+
+export const unFollowUserThunk = (userId) => {
+    return (dispatch) => {
+        dispatch(toggleFollowingProgress(true, userId))
+        usersAPI.unfollowUser(userId)
+            .then(data => {
+                if (data.resultCode === 0) {
+                    dispatch(unfollow(userId))
+                }
+            })
+            dispatch(toggleFollowingProgress(false, userId))
+    }
+}
 
 
 

@@ -1,7 +1,4 @@
 import React from 'react';
-import s from './Profile.module.css';
-import ProfileInfo from "./ProfileInfo/ProfileInfo";
-import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import Profile from "./Profile";
 import axios from "axios";
 import {connect} from "react-redux";
@@ -14,7 +11,7 @@ class ProfileContainer extends React.Component {
         let userId = this.props.match.params.userId;
         if (!userId) {
             userId = 2
-        };
+        }
         axios.get(`https://social-network.samuraijs.com/api/1.0/profile/` + userId)
             .then(response => {
                 this.props.setUserProfile(response.data);
