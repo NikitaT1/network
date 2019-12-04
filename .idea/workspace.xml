@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +128,7 @@
       <workItem from="1574800279854" duration="246000" />
       <workItem from="1574835872639" duration="2085000" />
       <workItem from="1575364680663" duration="11421000" />
-      <workItem from="1575442407334" duration="9889000" />
+      <workItem from="1575442407334" duration="11564000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -296,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575374917150</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="added getStatus and updateStatus (with put, localState)">
+      <created>1575456470601</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1575456470626</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,20 +340,21 @@
     <MESSAGE value="added compose" />
     <MESSAGE value="added status with setState, local state" />
     <MESSAGE value="added compose for UsersContainer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added compose for UsersContainer" />
+    <MESSAGE value="added getStatus and updateStatus (with put, localState)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added getStatus and updateStatus (with put, localState)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="10" key="CommitChangelistDialog2" timestamp="1575374914021">
+    <state x="393" y="10" key="CommitChangelistDialog2" timestamp="1575456461292">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575374914021" />
+    <state x="393" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575456461292" />
     <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1575445651098">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575445651098" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575374923974">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575456494862">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575374923974" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575456494862" />
   </component>
 </project>
