@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SocialNetworkMY" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exampleNetwork/react-way-of-samurai" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -128,7 +132,7 @@
       <workItem from="1574800279854" duration="246000" />
       <workItem from="1574835872639" duration="2085000" />
       <workItem from="1575364680663" duration="11421000" />
-      <workItem from="1575442407334" duration="11564000" />
+      <workItem from="1575442407334" duration="17737000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -298,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575456470626</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="added componentDidUpdate">
+      <created>1575460058731</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1575460058739</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -341,20 +352,21 @@
     <MESSAGE value="added status with setState, local state" />
     <MESSAGE value="added compose for UsersContainer" />
     <MESSAGE value="added getStatus and updateStatus (with put, localState)" />
-    <option name="LAST_COMMIT_MESSAGE" value="added getStatus and updateStatus (with put, localState)" />
+    <MESSAGE value="added componentDidUpdate" />
+    <option name="LAST_COMMIT_MESSAGE" value="added componentDidUpdate" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="393" y="10" key="CommitChangelistDialog2" timestamp="1575456461292">
+    <state x="393" y="10" key="CommitChangelistDialog2" timestamp="1575460055044">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="393" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575456461292" />
-    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1575445651098">
+    <state x="393" y="10" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575460055044" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1575467006070">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575445651098" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575456494862">
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575467006070" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575460156244">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575456494862" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575460156244" />
   </component>
 </project>
