@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/validators/validators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Dialogs/AddMessageForm/AddMessageForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/common/FormsControls" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exampleNetwork/react-way-of-samurai" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -134,7 +135,10 @@
       <workItem from="1575364680663" duration="11421000" />
       <workItem from="1575442407334" duration="17737000" />
       <workItem from="1575526189755" duration="12964000" />
-      <workItem from="1575561744452" duration="4242000" />
+      <workItem from="1575561744452" duration="4985000" />
+      <workItem from="1575613859838" duration="941000" />
+      <workItem from="1575627762099" duration="667000" />
+      <workItem from="1575628448728" duration="3992000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -318,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575544745475</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added validation">
+      <created>1575568801194</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1575568801194</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +349,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New social network prototype, already with react-redux, axios etc" />
     <MESSAGE value="Pagination added" />
     <MESSAGE value="refactor container component, made 'users' a pure function" />
     <MESSAGE value="refactored mapDispatchToProps in UsersContainer" />
@@ -363,24 +373,25 @@
     <MESSAGE value="added getStatus and updateStatus (with put, localState)" />
     <MESSAGE value="added componentDidUpdate" />
     <MESSAGE value="added redux-form for Dialogs and MyPosts" />
-    <option name="LAST_COMMIT_MESSAGE" value="added redux-form for Dialogs and MyPosts" />
+    <MESSAGE value="added validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added validation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="540" y="7" key="CommitChangelistDialog2" timestamp="1575544738324">
+    <state x="540" y="7" key="CommitChangelistDialog2" timestamp="1575568798657">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575544738324" />
-    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1575568480029">
+    <state x="540" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575568798657" />
+    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1575630377506">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575568480029" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575544770972">
+    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575630377506" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575568812147">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575544770972" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575568812147" />
   </component>
 </project>
