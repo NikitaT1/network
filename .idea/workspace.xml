@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/redux/app-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/HeaderContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/HeaderContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../exampleNetwork/newOne/react-way-of-samurai-master" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,14 +50,14 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\react-training\network\src\components\common\FormsControls" />
-      <recent name="D:\react-training\network\src\redux" />
-      <recent name="D:\react-training\network\src\components\Header" />
-      <recent name="D:\react-training\network\src\components\Profile" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\react-training\network\src\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\react-training\network\src\redux" />
+      <recent name="D:\react-training\network\src\components\common\FormsControls" />
+      <recent name="D:\react-training\network\src\components\Header" />
+      <recent name="D:\react-training\network\src\components\Profile" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -142,7 +144,10 @@
       <workItem from="1575795280930" duration="4703000" />
       <workItem from="1575812957279" duration="5610000" />
       <workItem from="1575873129885" duration="649000" />
-      <workItem from="1575958444551" duration="821000" />
+      <workItem from="1575958444551" duration="1273000" />
+      <workItem from="1575967231877" duration="189000" />
+      <workItem from="1577264603875" duration="693000" />
+      <workItem from="1577276722197" duration="11510000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -347,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575801919153</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added stopSubmit">
+      <created>1575959411071</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1575959411071</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,7 +379,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactored mapDispatchToProps in UsersContainer" />
     <MESSAGE value="add preloader for Users component with gif animation" />
     <MESSAGE value="add preloader component" />
     <MESSAGE value="added ProfileContainer component" />
@@ -392,24 +403,25 @@
     <MESSAGE value="added validation" />
     <MESSAGE value="added redux-form field validation" />
     <MESSAGE value="added login and logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="added login and logout" />
+    <MESSAGE value="added stopSubmit" />
+    <option name="LAST_COMMIT_MESSAGE" value="added stopSubmit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="540" y="7" key="CommitChangelistDialog2" timestamp="1575801916300">
+    <state x="540" y="7" key="CommitChangelistDialog2" timestamp="1575959406334">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575801916300" />
-    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1575818827584">
+    <state x="540" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1575959406334" />
+    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1577292612384">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1575818827584" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575801928159">
+    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577292612384" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1575959423647">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575801928159" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1575959423647" />
   </component>
 </project>
