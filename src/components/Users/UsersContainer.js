@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import {
     followUserThunk,
     unFollowUserThunk,
-    getUsers,
+    requestUsers,
     onPageChangedThunk,
     setCurrentPage,
     setToggle,
@@ -16,12 +16,19 @@ import {
 import Preloader from "../common/Preloader/Preloader";
 import {withAuthRedirect} from "../../hoc/withAuthRedirect";
 import {compose} from "redux";
+import {
+    getCurrentPage, getFollowingInProgress,
+    getToggleIsFetching,
+    getTotalUsersCount,
+    getUsers,
+    getUsersPage
+} from "../../redux/users-selectors";
 
 
 class UsersContainer extends React.Component {
 
     componentDidMount() {
-        this.props.getUsers(this.props.currentPage, this.props.pageSize);
+        this.props.requestUsers(this.props.currentPage, this.props.pageSize);
     }
 
     onPageChanged = (pageNumber) => {
@@ -49,12 +56,12 @@ render () {
 
 let mapStateToProps = (state) => {
     return {
-        users: state.usersPage.users,
-        pageSize: state.usersPage.pageSize,
-        totalUsersCount: state.usersPage.totalUsersCount,
-        currentPage: state.usersPage.currentPage,
-        toggleIsFetching: state.usersPage.toggleIsFetching,
-        followingInProgress: state.usersPage.followingInProgress
+        users: getUsers (state),
+        pageSize: getUsersPage(state),
+        totalUsersCount: getTotalUsersCount(state),
+        currentPage: getCurrentPage(state),
+        toggleIsFetching: getToggleIsFetching(state),
+        followingInProgress: getFollowingInProgress(state)
     }
 }
 
@@ -62,4 +69,4 @@ let mapStateToProps = (state) => {
 export default compose(connect(mapStateToProps,
     {followUserThunk, unFollowUserThunk, setUsers,
     setCurrentPage, setTotalUsersCount, setToggle,
-        toggleFollowingProgress, getUsers, onPageChangedThunk}), withAuthRedirect)(UsersContainer);
+        toggleFollowingProgress, requestUsers, onPageChangedThunk}), withAuthRedirect)(UsersContainer);
