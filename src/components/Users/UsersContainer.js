@@ -21,7 +21,7 @@ import {
     getToggleIsFetching,
     getTotalUsersCount,
     getUsers,
-    getUsersPage
+    getUsersPage, getUsersSuperSelector
 } from "../../redux/users-selectors";
 
 
@@ -36,7 +36,7 @@ class UsersContainer extends React.Component {
     }
 
 
-render () {
+render () { 
     return <>
         <div>
             {this.props.toggleIsFetching ? <Preloader/> : null }
@@ -56,7 +56,7 @@ render () {
 
 let mapStateToProps = (state) => {
     return {
-        users: getUsers (state),
+        users: getUsersSuperSelector (state),
         pageSize: getUsersPage(state),
         totalUsersCount: getTotalUsersCount(state),
         currentPage: getCurrentPage(state),
