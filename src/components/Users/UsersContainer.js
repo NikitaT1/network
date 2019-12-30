@@ -70,3 +70,4 @@ export default compose(connect(mapStateToProps,
     {followUserThunk, unFollowUserThunk, setUsers,
     setCurrentPage, setTotalUsersCount, setToggle,
         toggleFollowingProgress, requestUsers, onPageChangedThunk}), withAuthRedirect)(UsersContainer);
+

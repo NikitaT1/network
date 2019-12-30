@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatusWithHooks.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-selectors.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-selectors.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -48,14 +47,15 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\react-training\network\src\components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\react-training\network\src\components\Profile\ProfileInfo" />
       <recent name="D:\react-training\network\src\redux" />
       <recent name="D:\react-training\network\src\components\common\FormsControls" />
       <recent name="D:\react-training\network\src\components\Header" />
       <recent name="D:\react-training\network\src\components\Profile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\react-training\network\src\components" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -148,7 +148,10 @@
       <workItem from="1577276722197" duration="14170000" />
       <workItem from="1577340804784" duration="34000" />
       <workItem from="1577543948100" duration="1482000" />
-      <workItem from="1577642925062" duration="2041000" />
+      <workItem from="1577642925062" duration="2804000" />
+      <workItem from="1577686427921" duration="2416000" />
+      <workItem from="1577708973896" duration="2239000" />
+      <workItem from="1577719726815" duration="1631000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -374,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577303230985</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added createSelector">
+      <created>1577651229109</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1577651229109</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +404,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added ProfileContainer component" />
     <MESSAGE value="added props.match.params" />
     <MESSAGE value="added HeaderContainer" />
     <MESSAGE value="added login" />
@@ -419,25 +428,26 @@
     <MESSAGE value="added stopSubmit" />
     <MESSAGE value="added initialization" />
     <MESSAGE value="added selectors" />
-    <option name="LAST_COMMIT_MESSAGE" value="added selectors" />
+    <MESSAGE value="added createSelector" />
+    <option name="LAST_COMMIT_MESSAGE" value="added createSelector" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="540" y="7" key="CommitChangelistDialog2" timestamp="1577303227414">
+    <state x="540" y="7" key="CommitChangelistDialog2" timestamp="1577651224941">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="540" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577303227414" />
+    <state x="540" y="7" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577651224941" />
     <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1577340852816">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577340852816" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1577303241961">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1577651242218">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577303241961" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577651242218" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1577302420423">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
