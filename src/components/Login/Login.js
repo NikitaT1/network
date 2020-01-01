@@ -8,9 +8,9 @@ import style from "../common/FormsControls/FormsControls.module.css"
 
 const maxLength = maxLengthCreator(30)
 
-const LoginForm = (props) => {
+const LoginForm = ({handleSubmit, error}) => {
     return (
-        <form onSubmit={props.handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <div>
                 <Field placeholder={"login"} name={"email"} component={Input}
                        validate={[requiredField, maxLength]}/>
@@ -21,8 +21,8 @@ const LoginForm = (props) => {
             <div>
                 <Field type={"checkbox"} name={"rememberMe"} component={"input"}/> remember me
             </div>
-            { props.error && <div className={style.formSummaryError}>
-                {props.error}
+            { error && <div className={style.formSummaryError}>
+                {error}
             </div>}
             <div>
                 <button>Login</button>
@@ -38,9 +38,6 @@ const Login = (props) => {
         props.LoginThunk(formData.email, formData.password, formData.rememberMe,)
     }
 
-    /*if (props.isAuth) {
-        return <Redirect to={'/profile'}/>
-    }*/
 
     return <div>
     <h1>Login</h1>
