@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/utils/object-helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +153,7 @@
       <workItem from="1577719726815" duration="3376000" />
       <workItem from="1577810171181" duration="3149000" />
       <workItem from="1577829345395" duration="4758000" />
-      <workItem from="1577871884944" duration="2137000" />
+      <workItem from="1577871884944" duration="4998000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -407,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577830382439</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="users-reducer refactoring">
+      <created>1577887315957</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1577887315957</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +434,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added logic for &quot;follow/unfollow&quot; buttons" />
     <MESSAGE value="added axios.create for UsersContainer component" />
     <MESSAGE value="added &quot;follow/unfollow&quot; buttons into API" />
     <MESSAGE value="added  disabled function for follow\unfollow buttons" />
@@ -452,25 +458,26 @@
     <MESSAGE value="added hooks" />
     <MESSAGE value="added hook useEffect" />
     <MESSAGE value="refactoring: redux ducks" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring: redux ducks" />
+    <MESSAGE value="users-reducer refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="users-reducer refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="476" y="15" key="CommitChangelistDialog2" timestamp="1577830375817">
+    <state x="476" y="15" key="CommitChangelistDialog2" timestamp="1577887312739">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="476" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577830375817" />
-    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1577832952656">
+    <state x="476" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577887312739" />
+    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1577890500224">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577832952656" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1577830394683">
+    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577890500224" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1577887324763">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577830394683" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577887324763" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1577302420423">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
