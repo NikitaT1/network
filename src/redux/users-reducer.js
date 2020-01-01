@@ -94,29 +94,30 @@ export const onPageChangedThunk = (pageNumber, pageSize) => {
     }
 }
 
+const followUnfollowFlow = async (dispatch, userId, apiMethod, actionCreator) => {
+    dispatch(toggleFollowingProgress(true, userId))
+    let response = await apiMethod(userId)
+    if (response.resultCode === 0) {
+        dispatch(actionCreator(userId))
+    }
+    (dispatch(toggleFollowingProgress(false, userId)))
+
+
+}
+
 export const followUserThunk = (userId) => {
-    return (dispatch) => {
-        dispatch(toggleFollowingProgress(true, userId))
-        usersAPI.followUser(userId)
-            .then(data => {
-                if (data.resultCode === 0) {
-                    dispatch(follow(userId))
-                }
-            })
-            .then(dispatch(toggleFollowingProgress(false, userId)))
+    return async (dispatch) => {
+        let apiMethod = usersAPI.followUser.bind(usersAPI);
+        let actionCreator = follow;
+        followUnfollowFlow(dispatch, userId, apiMethod, actionCreator)
     }
 }
 
 export const unFollowUserThunk = (userId) => {
-    return (dispatch) => {
-        dispatch(toggleFollowingProgress(true, userId))
-        usersAPI.unfollowUser(userId)
-            .then(data => {
-                if (data.resultCode === 0) {
-                    dispatch(unfollow(userId))
-                }
-            })
-            .then(dispatch(toggleFollowingProgress(false, userId)))
+    return async (dispatch) => {
+        let apiMethod = usersAPI.unfollowUser.bind(usersAPI);
+        let actionCreator = unfollow;
+        followUnfollowFlow(dispatch, userId, apiMethod, actionCreator)
     }
 }
 
