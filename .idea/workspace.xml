@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +36,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SocialNetworkMY" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,16 +50,17 @@
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\react-training\network\src\components\common\Paginator" />
-      <recent name="D:\react-training\network\src\components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\react-training\network\src\components\Users" />
       <recent name="D:\react-training\network\src\components\Profile\ProfileInfo" />
       <recent name="D:\react-training\network\src\redux" />
       <recent name="D:\react-training\network\src\components\common\FormsControls" />
       <recent name="D:\react-training\network\src\components\Header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\react-training\network\src\components\Profile\ProfileInfo" />
+      <recent name="D:\react-training\network\src\components\common\Paginator" />
+      <recent name="D:\react-training\network\src\components" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -154,7 +160,7 @@
       <workItem from="1577810171181" duration="3149000" />
       <workItem from="1577829345395" duration="4758000" />
       <workItem from="1577871884944" duration="9333000" />
-      <workItem from="1577964601926" duration="1280000" />
+      <workItem from="1577964601926" duration="7267000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -429,7 +435,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577895964704</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="added React.lazy &amp; React.Suspense">
+      <created>1577966681228</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1577966681228</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added  disabled function for follow\unfollow buttons" />
     <MESSAGE value="added more thunks" />
     <MESSAGE value="HeaderContainer and ProfileContainer refactoring" />
     <MESSAGE value="added Login component" />
@@ -474,25 +486,26 @@
     <MESSAGE value="users-reducer refactoring" />
     <MESSAGE value="added object-helpers component" />
     <MESSAGE value="added paginator component" />
-    <option name="LAST_COMMIT_MESSAGE" value="added paginator component" />
+    <MESSAGE value="added React.lazy &amp; React.Suspense" />
+    <option name="LAST_COMMIT_MESSAGE" value="added React.lazy &amp; React.Suspense" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="481" y="0" key="CommitChangelistDialog2" timestamp="1577895961779">
+    <state x="481" y="0" key="CommitChangelistDialog2" timestamp="1577995521458">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="481" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577895961779" />
-    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1577890500224">
+    <state x="481" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577995521458" />
+    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1577995351763">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577890500224" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1577895967516">
+    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1577995351763" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1577966692279">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577895967516" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577966692279" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1577302420423">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

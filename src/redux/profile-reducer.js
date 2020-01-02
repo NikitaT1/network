@@ -1,8 +1,10 @@
 import {profileAPI, usersAPI} from "../api/api";
+import {toggleFollowingProgress} from "./users-reducer";
 
 const ADD_POST = 'network/profile/ADD-POST';
 const SET_USER_PROFILE = 'network/profile/SET_USER_PROFILE';
-const SET_STATUS = 'network/profile/SET_STATUS'
+const SET_STATUS = 'network/profile/SET_STATUS';
+const SAVE_PHOTO_SUCCESS = 'SAVE_PHOTO_SUCCESS'
 
 
 let initialState = {
@@ -38,6 +40,9 @@ const profileReducer = (state = initialState, action) => {
         case SET_STATUS: {
             return {...state, status:action.status}
         }
+        case SAVE_PHOTO_SUCCESS: {
+            return {...state, profile: {...state.profile, photos: action.photos}}
+        }
         default:
             return state;
     }
@@ -48,6 +53,7 @@ export const addPostActionCreator = (text) => ({type: ADD_POST, text: text});
 export const setUserProfile = (profile) =>
     ({type: SET_USER_PROFILE, profile});
 export const setStatus = (status) => ({type: SET_STATUS, status})
+export const savePhotoSuccess = (photos) => ({type: SAVE_PHOTO_SUCCESS, photos})
 
 export const getUserProfileThunk = (userId) => {
     return (dispatch) => {
@@ -75,6 +81,15 @@ export const updateStatusThunk = (status) => {
                     dispatch(setStatus(status));
                 }
             })
+    }
+}
+
+export const savePhotoThunk = (file) => {
+    return async (dispatch) => {
+        let response = await profileAPI.savePhoto(file);
+        if (response.data.resultCode === 0) {
+            dispatch(savePhotoSuccess(response.data.data.photos))
+        }
     }
 }
 
