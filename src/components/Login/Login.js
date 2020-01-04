@@ -38,7 +38,6 @@ const Login = (props) => {
         props.LoginThunk(formData.email, formData.password, formData.rememberMe,)
     }
 
-
     return <div>
     <h1>Login</h1>
         <LoginReduxForm onSubmit={onSubmit}/>
