@@ -1,5 +1,6 @@
 import {profileAPI, usersAPI} from "../api/api";
 import {toggleFollowingProgress} from "./users-reducer";
+import {stopSubmit} from "redux-form";
 
 const ADD_POST = 'network/profile/ADD-POST';
 const SET_USER_PROFILE = 'network/profile/SET_USER_PROFILE';
@@ -94,10 +95,16 @@ export const savePhotoThunk = (file) => {
 }
 
 export const saveProfileThunk = (profile) => {
-    return async (dispatch) => {
-        let response = await profileAPI.saveProfile(profile);
+    return async (dispatch, getState) => {
+        const userId = getState().auth.userId
+        const response = await profileAPI.saveProfile(profile);
         if (response.data.resultCode === 0) {
-            //dispatch(savePhotoSuccess(response.data.data.photos))
+            dispatch(getUserProfileThunk(userId))
+        }
+        else {
+            //dispatch(stopSubmit("editProfile", {"contacts": {"facebook": response.data.messages[0]}}))
+            dispatch(stopSubmit("editProfile", {_error: response.data.messages[0] }))
+            return Promise.reject(response.data.messages[0])
         }
     }
 }

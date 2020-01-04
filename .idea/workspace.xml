@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/Profile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileDataForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControls/FormsControls.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SocialNetworkMY" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -166,7 +161,7 @@
       <workItem from="1577964601926" duration="7502000" />
       <workItem from="1578035196810" duration="14997000" />
       <workItem from="1578064182571" duration="925000" />
-      <workItem from="1578131983738" duration="351000" />
+      <workItem from="1578131983738" duration="8862000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -455,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577995608851</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="added createFiled &amp; editMode for Profile">
+      <created>1578132569983</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1578132569984</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +477,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HeaderContainer and ProfileContainer refactoring" />
     <MESSAGE value="added Login component" />
     <MESSAGE value="added Redirect" />
     <MESSAGE value="added High Order Component" />
@@ -500,25 +501,26 @@
     <MESSAGE value="added paginator component" />
     <MESSAGE value="added React.lazy &amp; React.Suspense" />
     <MESSAGE value="added componentDidUpdate to ProfileInfo component &amp; uploading avatars" />
-    <option name="LAST_COMMIT_MESSAGE" value="added componentDidUpdate to ProfileInfo component &amp; uploading avatars" />
+    <MESSAGE value="added createFiled &amp; editMode for Profile" />
+    <option name="LAST_COMMIT_MESSAGE" value="added createFiled &amp; editMode for Profile" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="619" y="0" key="CommitChangelistDialog2" timestamp="1577995604505">
+    <state x="357" y="20" key="CommitChangelistDialog2" timestamp="1578141635081">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="619" y="0" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1577995604505" />
-    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1578065111922">
+    <state x="357" y="20" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578141635081" />
+    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1578133252992">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578065111922" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1577995618054">
+    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578133252992" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578132578110">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1577995618054" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578132578110" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578053092587">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

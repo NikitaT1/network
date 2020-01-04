@@ -18,8 +18,10 @@ const ProfileInfo = ({profile, status, updateStatusThunk, isOwner, savePhotoThun
     }
 
     const onSubmit = (formData) => {
-        saveProfileThunk(formData)
-        setEditMode(false)
+        saveProfileThunk(formData).then(()=> {
+            setEditMode(false)
+        })
+        //setEditMode(false)
     }
 
     const onMainPhotoSelected = (e) => {
