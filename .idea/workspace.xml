@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Profile/MyPosts/MyPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="network" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +66,26 @@
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="npm start" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -73,6 +96,12 @@
       <envs />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -163,7 +192,7 @@
       <workItem from="1578248960698" duration="5212000" />
       <workItem from="1578312552970" duration="3846000" />
       <workItem from="1578384446055" duration="4522000" />
-      <workItem from="1578398905512" duration="828000" />
+      <workItem from="1578398905512" duration="5387000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -473,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578256749758</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added switch in app component, refactoring">
+      <created>1578399780999</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1578399780999</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +529,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added High Order Component" />
     <MESSAGE value="added compose" />
     <MESSAGE value="added status with setState, local state" />
     <MESSAGE value="added compose for UsersContainer" />
@@ -518,25 +553,42 @@
     <MESSAGE value="added createFiled &amp; editMode for Profile" />
     <MESSAGE value="added stopSubmit for Profile" />
     <MESSAGE value="added captcha" />
-    <option name="LAST_COMMIT_MESSAGE" value="added captcha" />
+    <MESSAGE value="added switch in app component, refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="added switch in app component, refactoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="357" y="20" key="CommitChangelistDialog2" timestamp="1578256744851">
+    <state x="357" y="20" key="CommitChangelistDialog2" timestamp="1578399776091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="357" y="20" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578256744851" />
+    <state x="357" y="20" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1578399776091" />
     <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1578391202924">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1578391202924" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578256760369">
+    <state width="1515" height="214" key="GridCell.Tab.0.bottom" timestamp="1578401522634">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578256760369" />
+    <state width="1515" height="214" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1578401522634" />
+    <state width="1515" height="214" key="GridCell.Tab.0.center" timestamp="1578401522633">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1578401522633" />
+    <state width="1515" height="214" key="GridCell.Tab.0.left" timestamp="1578401522633">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1578401522633" />
+    <state width="1515" height="214" key="GridCell.Tab.0.right" timestamp="1578401522634">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="214" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578401522634" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1578399793872">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1578399793872" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578053092587">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
