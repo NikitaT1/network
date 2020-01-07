@@ -5,7 +5,7 @@ import {Field, Form, reduxForm} from "redux-form";
 import {maxLengthCreator, requiredField} from "../../../utils/validators/validators";
 import {Textarea} from "../../common/FormsControls/FormsControls";
 
-class MyPosts extends PureComponent {
+class MyPosts extends React.Component {
 
     shouldComponentUpdate(nextProps, nextState) {
         return nextProps != this.props || nextState != this.state
