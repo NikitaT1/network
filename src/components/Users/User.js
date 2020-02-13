@@ -21,7 +21,6 @@ let User = (props) => {
                                       onClick={() => props.unFollowUserThunk(u.id)}>Unfollow</button>
                             : <button disabled={props.followingInProgress.some(id=> id === u.id)}
                                       onClick={()=>props.followUserThunk(u.id)}>Follow</button>}
-
                     </div>
                 </span>
                     <span>
