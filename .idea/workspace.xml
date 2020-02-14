@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,14 +205,7 @@
       <workItem from="1581582227348" duration="7010000" />
       <workItem from="1581595474081" duration="1474000" />
       <workItem from="1581615780806" duration="1339000" />
-      <workItem from="1581661398096" duration="13352000" />
-    </task>
-    <task id="LOCAL-00002" summary="Pagination added">
-      <created>1572465470108</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572465470108</updated>
+      <workItem from="1581661398096" duration="16015000" />
     </task>
     <task id="LOCAL-00003" summary="refactor container component, made 'users' a pure function">
       <created>1572530375722</created>
@@ -549,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581679081117</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="typeScript for profile-reducer">
+      <created>1581684701488</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1581684701488</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added redux-form for Dialogs and MyPosts" />
     <MESSAGE value="added validation" />
     <MESSAGE value="added redux-form field validation" />
     <MESSAGE value="added login and logout" />
@@ -594,17 +594,18 @@
     <MESSAGE value="started adding typeScript. Firstly into redux, into app-reducer" />
     <MESSAGE value="typeScript for auth-reducer" />
     <MESSAGE value="typeScript for dialogs-reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="typeScript for dialogs-reducer" />
+    <MESSAGE value="typeScript for profile-reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="typeScript for profile-reducer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="350" y="15" key="CommitChangelistDialog2" timestamp="1581679077456">
+    <state x="350" y="15" key="CommitChangelistDialog2" timestamp="1581684698427">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="350" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1581679077456" />
+    <state x="350" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1581684698427" />
     <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1581662263090">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -625,10 +626,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578432638936" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1581679081675">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1581684706236">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1581679081675" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1581684706236" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578053092587">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -639,7 +640,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.ts</url>
-          <line>146</line>
+          <line>115</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
