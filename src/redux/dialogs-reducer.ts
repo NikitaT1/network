@@ -2,6 +2,16 @@ const SEND_MESSAGE = 'network/dialogs/SEND_MESSAGE';
 
 export type InitialStateType = typeof initialState;
 
+type DialogsType = {
+    id: number
+    name: string
+}
+
+type MessagesType = {
+    id: number
+    message: string
+}
+
 let initialState = {
     dialogs: [
         {id: 1, name: 'Joshua'},
@@ -10,14 +20,14 @@ let initialState = {
         {id: 4, name: 'Sam'},
         {id: 5, name: 'Jenkins'},
         {id: 6, name: 'Webster'}
-    ],
+    ] as Array<DialogsType>,
     messages: [
         {id: 1, message: 'Hi'},
         {id: 2, message: 'Hello!'},
         {id: 3, message: 'Yo'},
         {id: 4, message: 'Yo'},
         {id: 5, message: 'Yo'}
-    ],
+    ] as Array<MessagesType>
 };
 
 
