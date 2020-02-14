@@ -14,11 +14,11 @@ let initialState: IInitialState = {
     initialized: false
 };
 
-const appReducer = (state = initialState, action: IInitializedSuccess) => {
+const appReducer = (state = initialState, action: any): IInitialState => {
     switch (action.type) {
         case INITIALIZED_SUCCESS:
             return {
-                ...state, initialized: true
+                ...state, initialized: true,
             }
         default:
             return state;
@@ -30,7 +30,7 @@ interface IInitializedSuccess {
     type: typeof INITIALIZED_SUCCESS
 }
 
-export const initializedSuccess = () =>
+export const initializedSuccess = ():IInitializedSuccess =>
     ({type: INITIALIZED_SUCCESS})
 
 export const initializedApp = () => (dispatch: any) => {
