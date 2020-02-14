@@ -1,13 +1,20 @@
 
 import {getAuthUserDataThunk} from "./auth-reducer";
+import {Dispatch} from "redux";
 
 const INITIALIZED_SUCCESS = 'network/app/INITIALIZED_SUCCESS';
 
-let initialState = {
+
+interface IInitialState {
+    initialized: boolean
+}
+
+
+let initialState: IInitialState = {
     initialized: false
 };
 
-const appReducer = (state = initialState, action) => {
+const appReducer = (state = initialState, action: IInitializedSuccess) => {
     switch (action.type) {
         case INITIALIZED_SUCCESS:
             return {
@@ -19,10 +26,14 @@ const appReducer = (state = initialState, action) => {
 }
 
 
+interface IInitializedSuccess {
+    type: typeof INITIALIZED_SUCCESS
+}
+
 export const initializedSuccess = () =>
     ({type: INITIALIZED_SUCCESS})
 
-export const initializedApp = () => (dispatch) => {
+export const initializedApp = () => (dispatch: any) => {
     let promise = dispatch(getAuthUserDataThunk())
         Promise.all([promise])
             .then(()=> {
