@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/app-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +204,7 @@
       <workItem from="1581582227348" duration="7010000" />
       <workItem from="1581595474081" duration="1474000" />
       <workItem from="1581615780806" duration="1339000" />
-      <workItem from="1581661398096" duration="5509000" />
+      <workItem from="1581661398096" duration="8935000" />
     </task>
     <task id="LOCAL-00001" summary="New social network prototype, already with react-redux, axios etc">
       <created>1571745468250</created>
@@ -542,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581662848231</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="typeScript for auth-reducer">
+      <created>1581671533790</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1581671533790</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added getStatus and updateStatus (with put, localState)" />
     <MESSAGE value="added componentDidUpdate" />
     <MESSAGE value="added redux-form for Dialogs and MyPosts" />
     <MESSAGE value="added validation" />
@@ -587,17 +593,18 @@
     <MESSAGE value="gitHub pages testing" />
     <MESSAGE value="added advanced paginator" />
     <MESSAGE value="started adding typeScript. Firstly into redux, into app-reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="started adding typeScript. Firstly into redux, into app-reducer" />
+    <MESSAGE value="typeScript for auth-reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="typeScript for auth-reducer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="75" key="#Notifications" timestamp="1575545494874">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="357" y="20" key="CommitChangelistDialog2" timestamp="1581662842146">
+    <state x="350" y="15" key="CommitChangelistDialog2" timestamp="1581671530435">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="357" y="20" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1581662842146" />
+    <state x="350" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1581671530435" />
     <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1581662263090">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -618,10 +625,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578432638936" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1581662856036">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1581671539011">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1581662856036" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1581671539011" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578053092587">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

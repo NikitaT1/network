@@ -14,11 +14,11 @@ interface IInitialState {
 }
 
 let initialState = {
-    userId: null,
-    email: null,
-    login: null,
-    isAuth: false,
-    captchaUrl: null
+    userId: null as number | null,
+    email: null as string | null,
+    login: null as string | null,
+    isAuth: false as boolean | false,
+    captchaUrl: null as string | null
 
 };
 

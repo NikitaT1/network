@@ -1,5 +1,7 @@
 const SEND_MESSAGE = 'network/dialogs/SEND_MESSAGE';
 
+export type InitialStateType = typeof initialState;
+
 let initialState = {
     dialogs: [
         {id: 1, name: 'Joshua'},
@@ -18,7 +20,10 @@ let initialState = {
     ],
 };
 
-const dialogsReducer = (state = initialState, action) => {
+
+
+const dialogsReducer = (state = initialState, action: any):
+    InitialStateType => {
     switch (action.type) {
         case SEND_MESSAGE:
             return {
@@ -30,6 +35,12 @@ const dialogsReducer = (state = initialState, action) => {
     }
 }
 
-export const sendMessageCreator = (text) => ({type: SEND_MESSAGE, text: text})
+interface ISendMessageCreator{
+    type: typeof SEND_MESSAGE,
+    text: string
+
+}
+
+export const sendMessageCreator = (text: string): ISendMessageCreator  => ({type: SEND_MESSAGE, text: text})
 
 export default dialogsReducer;
