@@ -1,6 +1,7 @@
 import {usersAPI} from "../api/api";
 import {updateObjectInArray} from "../utils/object-helpers";
 import {photosType} from "../types/types";
+import {Dispatch} from "redux";
 
 const FOLLOW = 'network/users/FOLLOW';
 const UNFOLLOW = 'network/users/UNFOLLOW';
@@ -30,7 +31,10 @@ let initialState = {
     followingInProgress: [] as Array<number>
 };
 
-const usersReducer = (state = initialState, action: any): InitialStateType => {
+type ActionTypes = FollowType | UnfollowType | SetUsersType | SetCurrentPageType
+    | SetTotalUsersCountType | SetToggleType | ToggleFollowingProgressType
+
+const usersReducer = (state = initialState, action: ActionTypes): InitialStateType => {
     switch(action.type) {
         case FOLLOW:
             return {
@@ -128,7 +132,7 @@ export const requestUsers = (currentPage: number, pageSize: number) => {
 }
 }
 export const onPageChangedThunk = (pageNumber: number, pageSize: number) => {
-    return (dispatch: any) => {
+    return (dispatch: Dispatch<ActionTypes>) => {
         dispatch(setToggle(true));
         dispatch(setCurrentPage(pageNumber))
         usersAPI.getUsers(pageNumber, pageSize).then(data => {
@@ -148,14 +152,14 @@ export const followUnfollowFlow = async (dispatch: any, userId: number, apiMetho
 
 }
 export const followUserThunk = (userId: number) => {
-    return async (dispatch: any) => {
+    return async (dispatch: Dispatch<ActionTypes>) => {
         let apiMethod = usersAPI.followUser.bind(usersAPI);
         let actionCreator = follow;
         followUnfollowFlow(dispatch, userId, apiMethod, actionCreator)
     }
 }
 export const unFollowUserThunk = (userId: number) => {
-    return async (dispatch: any) => {
+    return async (dispatch: Dispatch<ActionTypes>) => {
         let apiMethod = usersAPI.unfollowUser.bind(usersAPI);
         let actionCreator = unfollow;
         followUnfollowFlow(dispatch, userId, apiMethod, actionCreator)

@@ -71,11 +71,12 @@ export const getAuthUserDataThunk = () => async (dispatch: any) => {
             }
 }
 
+
 export const LoginThunk = (email: string | null, password: string | null, rememberMe: any, captcha: string | null) => (dispatch: any) => {
     authAPI.login(email, password, rememberMe, captcha)
         .then(response => {
             if (response.data.resultCode === 0) {
-                dispatch(getAuthUserDataThunk());
+                dispatch(getAuthUserDataThunk())
             }
             else {
                 if (response.data.resultCode === 10){

@@ -2,10 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ca0865-4be9-446e-b2fe-14caa2725084" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/Users.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Users/UsersContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Paginator/PaginatorAdvanced.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/users-selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Profile/ProfileInfo/ProfileStatus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/UsersContainer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/PaginatorAdvanced.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/users-selectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/types.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +48,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/friday/projectfrifay/features" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -206,6 +221,31 @@
       <workItem from="1581595474081" duration="1474000" />
       <workItem from="1581615780806" duration="1339000" />
       <workItem from="1581661398096" duration="16015000" />
+      <workItem from="1582007043379" duration="528000" />
+      <workItem from="1582009445563" duration="2623000" />
+      <workItem from="1582286943297" duration="200000" />
+      <workItem from="1582302239176" duration="1048000" />
+      <workItem from="1582398317866" duration="2419000" />
+      <workItem from="1582446747284" duration="1333000" />
+      <workItem from="1582545074006" duration="8578000" />
+      <workItem from="1582628321633" duration="659000" />
+      <workItem from="1582650526971" duration="3279000" />
+      <workItem from="1582793502947" duration="3101000" />
+      <workItem from="1582805704297" duration="1186000" />
+      <workItem from="1582894044519" duration="1116000" />
+      <workItem from="1583009420033" duration="587000" />
+      <workItem from="1583241543147" duration="1659000" />
+      <workItem from="1583246343240" duration="4030000" />
+      <workItem from="1583488523335" duration="181000" />
+      <workItem from="1583489327293" duration="649000" />
+      <workItem from="1583597125124" duration="1698000" />
+      <workItem from="1583607389674" duration="677000" />
+      <workItem from="1583653562636" duration="7925000" />
+      <workItem from="1583755285627" duration="1417000" />
+      <workItem from="1583778119155" duration="1765000" />
+      <workItem from="1583822390029" duration="5021000" />
+      <workItem from="1583854620288" duration="6807000" />
+      <workItem from="1583923946276" duration="773000" />
     </task>
     <task id="LOCAL-00003" summary="refactor container component, made 'users' a pure function">
       <created>1572530375722</created>
@@ -602,14 +642,19 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="75" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1575545494874" />
-    <state x="350" y="15" key="CommitChangelistDialog2" timestamp="1581684698427">
+    <state x="350" y="15" key="CommitChangelistDialog2" timestamp="1581688016325">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="350" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1581684698427" />
-    <state x="615" y="201" key="FileChooserDialogImpl" timestamp="1581662263090">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="350" y="15" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1581688016325" />
+    <state x="653" y="208" key="FileChooserDialogImpl" timestamp="1583923996303">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1581662263090" />
+    <state x="615" y="201" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1583243206149" />
+    <state x="653" y="208" key="FileChooserDialogImpl/63.0.1473.864@63.0.1473.864" timestamp="1583923996303" />
+    <state x="670" y="326" key="Github.ShareDialog" timestamp="1583666248400">
+      <screen x="63" y="0" width="1473" height="864" />
+    </state>
+    <state x="670" y="326" key="Github.ShareDialog/63.0.1473.864@63.0.1473.864" timestamp="1583666248400" />
     <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1578432638936">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -626,14 +671,15 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1578432638936" />
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1581684706236">
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1581688021583">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1581684706236" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1578053092587">
-      <screen x="0" y="0" width="1536" height="834" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1581688021583" />
+    <state x="476" y="161" width="672" height="703" key="search.everywhere.popup" timestamp="1583829396518">
+      <screen x="63" y="0" width="1473" height="864" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1578053092587" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1582797450218" />
+    <state x="476" y="161" width="672" height="703" key="search.everywhere.popup/63.0.1473.864@63.0.1473.864" timestamp="1583829396518" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -641,8 +687,12 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.ts</url>
           <line>115</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/types/types.ts</url>
+          <line>5</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

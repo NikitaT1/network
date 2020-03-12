@@ -9,7 +9,7 @@ import { reducer as formReducer } from 'redux-form'
 import appReducer from "./app-reducer";
 
 
-let reducers = combineReducers({
+let RootReducer = combineReducers({
     profilePage: profileReducer,
     dialogsPage: dialogsReducer,
     sidebar: sidebarReducer,
@@ -19,8 +19,12 @@ let reducers = combineReducers({
     app: appReducer,
 });
 
-let store = createStore(reducers, applyMiddleware(thunkMiddleware));
+type RootReducerType = typeof RootReducer
+export type AppStateType = ReturnType<RootReducerType>
 
+let store = createStore(RootReducer, applyMiddleware(thunkMiddleware));
+
+// @ts-ignore
 window.store = store;
 
 

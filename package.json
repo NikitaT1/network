@@ -5,10 +5,12 @@
   "homepage": "https://nikitat1.github.io/network/",
   "dependencies": {
     "@babel/runtime": "^7.6.3",
+    "@types/classnames": "^2.2.9",
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.1",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "@types/react-redux": "^7.1.7",
     "@types/redux-form": "^8.2.1",
     "axios": "^0.19.0",
     "classnames": "^2.2.6",

@@ -23,15 +23,39 @@ import {
     getUsers,
     getUsersPage, getUsersSuperSelector
 } from "../../redux/users-selectors";
+import {AppStateType} from "../../redux/redux-store";
+import {UserType} from "../../types/types";
 
 
-class UsersContainer extends React.Component {
+type PropsType = {
+    requestUsers: (currentPage: number, pageSize: number) => void
+    onPageChanged: (pageNumber: number) => void
+    onPageChangedThunk: (pageNumber: number, pageSize: number) => void
+
+    followUserThunk: any
+    unFollowUserThunk: any
+    toggleFollowingProgress: any
+    followingInProgress: any
+    
+    totalUsersCount: any
+    currentPage: number
+    pageSize: number
+    pageNumber: number
+    toggleIsFetching: boolean
+    users: Array<UserType>
+    pages: number
+
+
+
+}
+
+class UsersContainer extends React.Component<PropsType> {
 
     componentDidMount() {
         this.props.requestUsers(this.props.currentPage, this.props.pageSize);
     }
 
-    onPageChanged = (pageNumber) => {
+    onPageChanged = (pageNumber: number) => {
         this.props.onPageChangedThunk(pageNumber, this.props.pageSize);
     }
 
@@ -49,12 +73,13 @@ render () {
                   followUserThunk={this.props.followUserThunk}
                   unFollowUserThunk={this.props.unFollowUserThunk}
                   toggleFollowingProgress={this.props.toggleFollowingProgress}
-                  followingInProgress={this.props.followingInProgress}/>
+                  followingInProgress={this.props.followingInProgress}
+        pages={this.props.pages}/>
                   </>
 }}
 
 
-let mapStateToProps = (state) => {
+let mapStateToProps = (state: AppStateType) => {
     return {
         users: getUsersSuperSelector (state),
         pageSize: getUsersPage(state),
