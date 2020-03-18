@@ -1,4 +1,4 @@
-import {authAPI, SecurityAPI} from "../api/api";
+import {authAPI, EnumResultCode, EnumResultCodeForCaptcha, SecurityAPI} from "../api/api";
 import {stopSubmit} from "redux-form";
 
 const SET_USER_DATA = 'network/auth/SET_USER_DATA';
@@ -28,7 +28,6 @@ const authReducer = (state = initialState, action: any): IInitialState => {
             return{...state, ...action.data, isAuth: true}
         }
         case GET_CAPTCHA_URL_SUCCESS: {
-            debugger
             return{...state, ...action.data}
         }
         default:
@@ -64,9 +63,9 @@ export const getCaptchaUrlSuccess = (captchaUrl: string): IGetCaptchaUrlSuccess 
 
 
 export const getAuthUserDataThunk = () => async (dispatch: any) => {
-    let response = await authAPI.me()
-            if (response.data.resultCode === 0) {
-                let {id, email, login} = response.data.data;
+    let dataMe = await authAPI.me()
+            if (dataMe.resultCode === EnumResultCode.Success) {
+                let {id, email, login} = dataMe.data;
                 dispatch(setAuthUserData(id, email, login, true));
             }
 }
@@ -75,11 +74,11 @@ export const getAuthUserDataThunk = () => async (dispatch: any) => {
 export const LoginThunk = (email: string | null, password: string | null, rememberMe: any, captcha: string | null) => (dispatch: any) => {
     authAPI.login(email, password, rememberMe, captcha)
         .then(response => {
-            if (response.data.resultCode === 0) {
+            if (response.data.resultCode === EnumResultCode.Success) {
                 dispatch(getAuthUserDataThunk())
             }
             else {
-                if (response.data.resultCode === 10){
+                if (response.data.resultCode === EnumResultCodeForCaptcha.CaptchaRequest){
                     dispatch(getCaptchaUrlThunk())
                 }
                 let message = response.data.messages.length > 0 ? response.data.messages[0] : "Some error";
@@ -91,7 +90,7 @@ export const LoginThunk = (email: string | null, password: string | null, rememb
 export const LogOutThunk = () => (dispatch: any) => {
     authAPI.logOut()
         .then(response => {
-            if (response.data.resultCode === 0) {
+            if (response.data.resultCode === EnumResultCode.Success) {
                 dispatch(setAuthUserData(null, null, null, false));
             }
         });

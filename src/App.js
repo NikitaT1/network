@@ -40,7 +40,6 @@ class App extends React.Component {
                 <Navbar/>
                 <div className='app-wrapper-content'>
                     <Switch>
-
                         <Route path='/dialogs'
                                render={() => <DialogsContainer/>}/>
 
@@ -62,10 +61,6 @@ class App extends React.Component {
 
                         <Route path='*'
                                render={() => <div>404 PAGE NOT FOUND</div>}/>
-
-
-
-
                     </Switch>
                 </div>
             </div>
