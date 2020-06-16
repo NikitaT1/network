@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import {Redirect, Route, Switch} from "react-router-dom";
@@ -14,24 +14,24 @@ import Preloader from "./components/common/Preloader/Preloader";
 
 const UsersContainer = React.lazy(()=> import("./components/Users/UsersContainer"))
 
-class App extends React.Component {
+const App = (props) => {
 
-    catchAllUnhandledErrors = (promiseRejectionEvent) => {
+    const catchAllUnhandledErrors = (promiseRejectionEvent) => {
         alert("Some error occured")
     }
 
-    componentDidMount() {
-        this.props.initializedApp();
-        window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
+    useEffect(() => {
+        props.initializedApp();
+        window.addEventListener("unhandledrejection", catchAllUnhandledErrors)
 
-    }
+        return function cleanup () {
+            window.removeEventListener("unhandledrejection", catchAllUnhandledErrors)
+        }
 
-    componentWillUnmount() {
-        window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors);
-    }
+    }, [])
 
-    render() {
-        if (!this.props.initialized) {
+
+        if (!props.initialized) {
             return <Preloader/>
         }
         return (
@@ -65,7 +65,7 @@ class App extends React.Component {
                 </div>
             </div>
         )
-    }
+
 }
 
 
